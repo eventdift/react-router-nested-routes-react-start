@@ -5,20 +5,20 @@ import { fetchMovies } from '../actions';
 import MoviesList from '../components/MoviesList';
 
 class MoviesPage extends Component {
-  render() {
-    return (
-      <div>
-        <MoviesList movies={this.props.movies} />
-        {this.props.children}
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div>
+                <MoviesList movies={this.props.movies} />
+                {this.props.children}
+            </div>
+        )
+    }
 }
 
 const mapStateToProps = (state) => {
-  return {
-    movies: state.movies
-  };
+    return {
+        movies: state.movies
+    };
 }
 
 export default connect(mapStateToProps)(MoviesPage);

@@ -3,7 +3,7 @@ class MoviesShow extends Component {
   render(){
     return(
       <div>
-        Movies Show
+        Movies Show {this.props.params.id}
       </div>
     )
   }
